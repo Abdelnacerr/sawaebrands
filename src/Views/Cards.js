@@ -8,7 +8,6 @@ import Button from "../components/CustomButtons/Button.js";
 import CardHeader from "../components/Card/CardHeader.js";
 
 import { cardTitle } from "../assets/jss/material-kit-react.js";
-import { Description } from "@material-ui/icons";
 
 const styles = {
   cardTitle,
