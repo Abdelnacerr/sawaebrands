@@ -1,6 +1,9 @@
 import React from "react";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
+// nodejs library that concatenates classes
+import classNames from "classnames";
+
 // core components
 import Card from "../components/Card/Card.js";
 import CardBody from "../components/Card/CardBody.js";
@@ -24,8 +27,9 @@ const useStyles = makeStyles(styles);
 const ContactCards = ({ email, cardheader, title, call, person }) => {
   const classes = useStyles();
   return (
-    <div>
-      <Card style={{ width: "20rem" }}>
+
+      <div className={classNames(classes.main, classes.mainRaised)}>
+       <Card style={{ width: "85%", textAlign:"center" }}>
         <CardHeader color="warning">{cardheader}</CardHeader>
         <CardBody>
           <h4 className={classes.cardTitle}> {title}</h4>

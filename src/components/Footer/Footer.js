@@ -43,7 +43,6 @@ export default function Footer(props) {
               <a
                 href="/About"
                 className={classes.block}
-                target="_blank"
               >
                 About us
               </a>
@@ -74,7 +73,6 @@ export default function Footer(props) {
           <a
             href="https://au.linkedin.com/in/mohamed-abdinasir-b50880bb"
             className={aClasses}
-            target="_blank"
           >
             Mohamed Abdinasir
           </a>{" "}

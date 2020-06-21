@@ -3,14 +3,14 @@ import { container } from "assets/jss/material-kit-react.js";
 const componentsStyle = {
   container,
   brand: {
-    color: "#FFFFFF",
+    color: "white",
     textAlign: "left"
   },
   title: {
     fontSize: "4.2rem",
     fontWeight: "600",
     display: "inline-block",
-    position: "relative"
+    position: "relative",
   },
   subtitle: {
     fontSize: "1.313rem",
