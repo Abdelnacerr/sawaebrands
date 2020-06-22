@@ -9,14 +9,19 @@ import ContactCards from "./ContactCards.js";
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "../assets/jss/material-kit-react/views/components.js";
 import Clearfix from "components/Clearfix/Clearfix.js";
+import { Helmet } from 'react-helmet'
 
 const useStyles = makeStyles(styles);
+const TITLE = 'Contact'
 
 function Contact() {
   const classes = useStyles();
 
   return (
     <>
+    <Helmet>
+          <title>{ TITLE }</title>
+        </Helmet>
       <Header
         brand="SAWAE BRANDS"
         rightLinks={<Hlinks />}

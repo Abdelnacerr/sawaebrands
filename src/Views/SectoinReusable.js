@@ -4,37 +4,24 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+import FormatSize from "@material-ui/icons/FormatSize";
+import DoneOutline from "@material-ui/icons/DoneOutline";
+import OpenWith from "@material-ui/icons/OpenWith";
 // core components
-import Header from "../components/Header/Header.js";
-import Hlinks from "./Hlinks"; 
-import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
-import Parallax from "components/Parallax/Parallax.js";
-import Typography from "@material-ui/core/Typography";
-
-import profile from "assets/img/faces/christian.jpg";
-
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
-export default function SectionCarousel(props) {
+const SectionCarousel=(
+  {
+    profile,
+    studio1, studio2, studio3, studio4,studio5,
+    work1, work2, work3, work4, work5
+  })=> {
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -44,33 +31,7 @@ export default function SectionCarousel(props) {
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <>
-    <Header
-      brand="SAWAE BRANDS"
-      rightLinks={<Hlinks />}
-      color="transparent"
-      fixed
-      changeColorOnScroll={{
-        height: 400,
-        color: "white",
-      }}
-    />
-    <Parallax image={require("../assets/img/profile-bg.jpg")}>
-      <div className={classes.container}>
-        <GridContainer>
-          <GridItem>
-            <div className={classes.brand}>
-              <Typography variant="h1" component="h2" style={{color: "white"}}>
-                Sawae Brands.
-              </Typography>{" "}
-              <Typography style={{color: "white"}}
-              className={classes.subtitle}variant="subtitle1" gutterBottom>
-                Wholesale perfumes and sprays distributor for leading brands.
-              </Typography>
-            </div>
-          </GridItem>
-        </GridContainer>
-      </div>
-    </Parallax>
+   
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -82,16 +43,7 @@ export default function SectionCarousel(props) {
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
-                    </Button>
+                    <h6>OUR RANGE</h6>
                   </div>
                 </div>
               </GridItem>
@@ -111,8 +63,8 @@ export default function SectionCarousel(props) {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Studio",
-                      tabIcon: Camera,
+                      tabButton: "Tuskys",
+                      tabIcon: FormatSize,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -143,8 +95,8 @@ export default function SectionCarousel(props) {
                       ),
                     },
                     {
-                      tabButton: "Work",
-                      tabIcon: Palette,
+                      tabButton: "Naivas",
+                      tabIcon: DoneOutline,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -180,8 +132,8 @@ export default function SectionCarousel(props) {
                       ),
                     },
                     {
-                      tabButton: "Favorite",
-                      tabIcon: Favorite,
+                      tabButton: "CARREFOUR",
+                      tabIcon: OpenWith,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -226,3 +178,4 @@ export default function SectionCarousel(props) {
 </>
   );
 }
+export default SectionCarousel;

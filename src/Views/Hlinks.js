@@ -44,11 +44,13 @@ export default function Hlinks(props) {
             }}
             buttonIcon={Apps}
             dropdownList={[
-              <Link to="/Perfumes" className={classes.dropdownLink}>
-                PERFUMES
+              <Link to="/SwissArabian" className={classes.dropdownLink}>
+                SwissArabian
               </Link>,
-              <Link to="/Sprays" className={classes.dropdownLink}>
-                SPRAYS
+              <Link to="/Nabeel" className={classes.dropdownLink}>
+              Nabeel
+            </Link>,<Link to="/iCare" className={classes.dropdownLink}>
+                iCare
               </Link>,
             ]}
           />

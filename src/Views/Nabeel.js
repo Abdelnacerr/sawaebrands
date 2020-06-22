@@ -18,9 +18,9 @@ import work3 from "assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
-const TITLE = "About";
+const TITLE = "Nabeel";
 
-function About() {
+function Nabeel() {
   return (
     <>
       <Helmet>
@@ -54,4 +54,4 @@ function About() {
   );
 }
 
-export default About;
+export default Nabeel;
