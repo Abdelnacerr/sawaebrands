@@ -7,7 +7,7 @@ import Contact from "./Views/Contact";
 import SwissArabian from "./Views/SwissArabian";
 import Nabeel from "./Views/Nabeel";
 import iCare from "./Views/iCare";
-import SectoinReusable from "./Views/SectoinReusable";
+import SectionReusable from "./Views/SectionReusable";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/SwissArabian" component={SwissArabian} ></Route>
           <Route path="/Nabeel" component={Nabeel} ></Route>
           <Route path="/iCare" component={iCare} ></Route>
-          <Route path="/SectoinReusable" component={SectoinReusable} ></Route>
+          <Route path="/SectionReusable" component={SectionReusable} ></Route>
         </Switch>
       </Router>
     </div>

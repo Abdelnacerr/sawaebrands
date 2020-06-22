@@ -56,7 +56,7 @@ export default function NavPills(props) {
         });
         return (
           <Tab
-            label={prop.tabButton}
+            label={prop.label}
             key={key}
             {...icon}
             classes={{
@@ -109,7 +109,6 @@ NavPills.propTypes = {
   active: PropTypes.number,
   tabs: PropTypes.arrayOf(
     PropTypes.shape({
-      tabButton: PropTypes.string,
       tabIcon: PropTypes.object,
       tabContent: PropTypes.node
     })

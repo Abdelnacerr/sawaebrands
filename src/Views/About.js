@@ -3,7 +3,7 @@ import React from "react";
 import Parallax from "../components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
 import Hlinks from "./Hlinks";
-import SectionReusable from "./SectoinReusable";
+import SectionReusable from "./SectionReusable";
 import { Helmet } from "react-helmet";
 
 import profile from "assets/img/faces/christian.jpg";

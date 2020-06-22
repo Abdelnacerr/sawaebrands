@@ -8,9 +8,14 @@ import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Typography from "@material-ui/core/Typography";
 import Footer from "../components/Footer/Footer";
-import SectionReusable from "./SectoinReusable";
+import SectionReusable from "./SectionReusable";
 import { Helmet } from "react-helmet";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+
+// @material-ui/icons
+import FormatSize from "@material-ui/icons/FormatSize";
+import DoneOutline from "@material-ui/icons/DoneOutline";
+import OpenWith from "@material-ui/icons/OpenWith";
 
 import profile from "assets/img/faces/christian.jpg";
 import studio1 from "assets/img/examples/studio-1.jpg";
@@ -25,6 +30,11 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 const TITLE = "Sawae Brands";
+const pDescription ='An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure.{" "}';
+const  brandName="Christian Louboutin";
+const tabButton1="Tuskys";
+const tabButton2="Naivas";
+const tabButton3="Carrefour";
 
 const useStyles = makeStyles(styles);
 
@@ -71,6 +81,14 @@ const Home =()=> {
         </div>
       </Parallax>
       <SectionReusable 
+        Icon1 ={FormatSize}
+        Icon2 ={DoneOutline}
+        Icon3 ={OpenWith}
+        tabButton={tabButton1}
+        tabButton2={tabButton2}
+        tabButton3={tabButton3}
+        brandName = {brandName}
+        pDescription = {pDescription}
         profile={profile} 
         studio1={studio1}
         studio2={studio2}

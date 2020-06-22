@@ -4,6 +4,7 @@ import classNames from "classnames";
 
 import Parallax from "../components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
+import Footer from "../components/Footer/Footer.js";
 import Hlinks from "./Hlinks";
 import ContactCards from "./ContactCards.js";
 import { makeStyles } from "@material-ui/core/styles";
@@ -51,6 +52,7 @@ function Contact() {
         person = "Sharif Mohamed"
         /> 
       </div>
+      <Footer />
     </>
   );
 }

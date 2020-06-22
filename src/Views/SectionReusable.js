@@ -3,10 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import FormatSize from "@material-ui/icons/FormatSize";
-import DoneOutline from "@material-ui/icons/DoneOutline";
-import OpenWith from "@material-ui/icons/OpenWith";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -16,9 +13,11 @@ import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
-const SectionCarousel=(
+const SectionReusable=(
   {
-    profile,
+    profile, brandName, pDescription,
+    Icon1,Icon2,Icon3,
+    tabButton,tabButton2,tabButton3,
     studio1, studio2, studio3, studio4,studio5,
     work1, work2, work3, work4, work5
   })=> {
@@ -42,18 +41,14 @@ const SectionCarousel=(
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>OUR RANGE</h6>
+                    <h3 className={classes.title}>{brandName}</h3>
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+                {pDescription}
               </p>
             </div>
             <GridContainer justify="center">
@@ -63,8 +58,8 @@ const SectionCarousel=(
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Tuskys",
-                      tabIcon: FormatSize,
+                      label :tabButton,
+                      tabIcon: Icon1,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -95,8 +90,8 @@ const SectionCarousel=(
                       ),
                     },
                     {
-                      tabButton: "Naivas",
-                      tabIcon: DoneOutline,
+                      label :tabButton2,
+                      tabIcon: Icon2,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -132,8 +127,8 @@ const SectionCarousel=(
                       ),
                     },
                     {
-                      tabButton: "CARREFOUR",
-                      tabIcon: OpenWith,
+                      label :tabButton3,
+                      tabIcon: Icon3,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -178,4 +173,4 @@ const SectionCarousel=(
 </>
   );
 }
-export default SectionCarousel;
+export default SectionReusable;
