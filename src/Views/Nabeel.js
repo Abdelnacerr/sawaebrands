@@ -70,7 +70,6 @@ function Nabeel() {
         work5={work5}
       />
       <Footer />
-
     </>
   );
 }

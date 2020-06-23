@@ -11,7 +11,6 @@ import FormatSize from "@material-ui/icons/FormatSize";
 import DoneOutline from "@material-ui/icons/DoneOutline";
 import OpenWith from "@material-ui/icons/OpenWith";
 
-
 import profile from "assets/img/faces/christian.jpg";
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -70,7 +69,6 @@ function SwissArabian() {
         work5={work5}
       />
       <Footer />
-
     </>
   );
 }

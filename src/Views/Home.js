@@ -21,7 +21,7 @@ import profile from "assets/img/faces/christian.jpg";
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
+import studio4 from "assets/img/examples/swiss1.png";
 import studio5 from "assets/img/examples/studio-5.jpg";
 import work1 from "assets/img/examples/olu-eletu.jpg";
 import work2 from "assets/img/examples/clem-onojeghuo.jpg";
@@ -30,15 +30,16 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 const TITLE = "Sawae Brands";
-const pDescription ='An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure.{" "}';
-const  brandName="Christian Louboutin";
-const tabButton1="Tuskys";
-const tabButton2="Naivas";
-const tabButton3="Carrefour";
+const pDescription =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
+const brandName = "Christian Louboutin";
+const tabButton1 = "Tuskys";
+const tabButton2 = "Naivas";
+const tabButton3 = "Carrefour";
 
 const useStyles = makeStyles(styles);
 
-const Home =()=> {
+const Home = () => {
   const classes = useStyles();
   return (
     <>
@@ -80,16 +81,16 @@ const Home =()=> {
           </GridContainer>
         </div>
       </Parallax>
-      <SectionReusable 
-        Icon1 ={FormatSize}
-        Icon2 ={DoneOutline}
-        Icon3 ={OpenWith}
+      <SectionReusable
+        Icon1={FormatSize}
+        Icon2={DoneOutline}
+        Icon3={OpenWith}
         tabButton={tabButton1}
         tabButton2={tabButton2}
         tabButton3={tabButton3}
-        brandName = {brandName}
-        pDescription = {pDescription}
-        profile={profile} 
+        brandName={brandName}
+        pDescription={pDescription}
+        profile={profile}
         studio1={studio1}
         studio2={studio2}
         studio3={studio3}
@@ -100,10 +101,41 @@ const Home =()=> {
         work3={work3}
         work4={work4}
         work5={work5}
-        />
+      />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <SectionReusable
+        Icon1={FormatSize}
+        Icon2={DoneOutline}
+        Icon3={OpenWith}
+        tabButton={tabButton1}
+        tabButton2={tabButton2}
+        tabButton3={tabButton3}
+        brandName={brandName}
+        pDescription={pDescription}
+        profile={profile}
+        studio1={studio1}
+        studio2={studio2}
+        studio3={studio3}
+        studio4={studio4}
+        studio5={studio5}
+        work1={work1}
+        work2={work2}
+        work3={work3}
+        work4={work4}
+        work5={work5}
+      />
       <Footer />
     </>
   );
-}
+};
 
 export default Home;
