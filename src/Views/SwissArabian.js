@@ -11,7 +11,7 @@ import FormatSize from "@material-ui/icons/FormatSize";
 import DoneOutline from "@material-ui/icons/DoneOutline";
 import OpenWith from "@material-ui/icons/OpenWith";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/swissArabian.jpeg";
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
@@ -27,9 +27,11 @@ const TITLE = "SwissArabian";
 const pDescription =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 const brandName = "Swiss Arabian Brands";
-const tabButton1 = "Swiss Attar1";
-const tabButton2 = "Swiss Attar2";
-const tabButton3 = "Swiss Attar3";
+const tabButton1 = "Sapil";
+const tabButton2 = "Altamoda";
+const tabButton3 = "Shirley May";
+const tabButton4 = "Swiss Attar";
+
 function SwissArabian() {
   return (
     <>
@@ -54,6 +56,7 @@ function SwissArabian() {
         tabButton={tabButton1}
         tabButton2={tabButton2}
         tabButton3={tabButton3}
+        tabButton4={tabButton4}
         profile={profile}
         brandName={brandName}
         pDescription={pDescription}

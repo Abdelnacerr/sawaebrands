@@ -37,7 +37,7 @@ export default function Hlinks(props) {
       <ListItem className={classes.listItem}>
           <CustomDropdown
             noLiPadding
-            buttonText="Products"
+            buttonText="Brands"
             buttonProps={{
               className: classes.navLink,
               color: "transparent",

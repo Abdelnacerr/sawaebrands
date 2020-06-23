@@ -72,7 +72,7 @@ const SectionReusable = ({
                       tabIcon: Icon1,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs sm md>
+                          <GridItem xs={12} sm={12} md={6}>
                               <img
                                 alt="..."
                                 src={studio1}

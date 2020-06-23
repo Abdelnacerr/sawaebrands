@@ -13,11 +13,10 @@ import { Helmet } from "react-helmet";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 // @material-ui/icons
-import FormatSize from "@material-ui/icons/FormatSize";
-import DoneOutline from "@material-ui/icons/DoneOutline";
-import OpenWith from "@material-ui/icons/OpenWith";
+import {FormatSize,DoneOutline,OpenWith,Polymer,FormatItalic,CardGiftcard} from '@material-ui/icons';
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/iCare.png";
+import profile2 from "assets/img/faces/supermarket.png";
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
@@ -33,9 +32,12 @@ const TITLE = "Sawae Brands";
 const pDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
 const brandName = "Christian Louboutin";
-const tabButton1 = "Tuskys";
-const tabButton2 = "Naivas";
-const tabButton3 = "Carrefour";
+const tabButton1 = "Swiss Arabian";
+const tabButton2 = "Nabeel";
+const tabButton3 = "iCare";
+const tabButton4 = "Tuskys";
+const tabButton5 = "Naivas";
+const tabButton6 = "Carrefour";
 
 const useStyles = makeStyles(styles);
 
@@ -82,9 +84,9 @@ const Home = () => {
         </div>
       </Parallax>
       <SectionReusable
-        Icon1={FormatSize}
-        Icon2={DoneOutline}
-        Icon3={OpenWith}
+        Icon1={Polymer}
+        Icon2={CardGiftcard}
+        Icon3={FormatItalic}
         tabButton={tabButton1}
         tabButton2={tabButton2}
         tabButton3={tabButton3}
@@ -116,12 +118,12 @@ const Home = () => {
         Icon1={FormatSize}
         Icon2={DoneOutline}
         Icon3={OpenWith}
-        tabButton={tabButton1}
-        tabButton2={tabButton2}
-        tabButton3={tabButton3}
+        tabButton={tabButton4}
+        tabButton2={tabButton5}
+        tabButton3={tabButton6}
         brandName={brandName}
         pDescription={pDescription}
-        profile={profile}
+        profile={profile2}
         studio1={studio1}
         studio2={studio2}
         studio3={studio3}

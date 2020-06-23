@@ -8,11 +8,9 @@ import SectionReusable from "./SectionReusable";
 import { Helmet } from "react-helmet";
 
 // @material-ui/icons
-import FormatSize from "@material-ui/icons/FormatSize";
-import DoneOutline from "@material-ui/icons/DoneOutline";
-import OpenWith from "@material-ui/icons/OpenWith";
+import {FormatSize,DoneOutline,OpenWith} from "@material-ui/icons";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/iCare.jpg";
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
@@ -26,7 +24,7 @@ import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 const TITLE = "iCare";
 const pDescription =
-  'An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure.{" "}';
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 const brandName = "iCare Brands";
 const tabButton1 = "iCare1";
 const tabButton2 = "iCare2";
@@ -70,7 +68,6 @@ function iCare() {
         work5={work5}
       />
       <Footer />
-
     </>
   );
 }

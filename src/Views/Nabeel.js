@@ -8,11 +8,9 @@ import SectionReusable from "./SectionReusable";
 import { Helmet } from "react-helmet";
 
 // @material-ui/icons
-import FormatSize from "@material-ui/icons/FormatSize";
-import DoneOutline from "@material-ui/icons/DoneOutline";
-import OpenWith from "@material-ui/icons/OpenWith";
+import {FormatSize,DoneOutline} from "@material-ui/icons";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/nabeel.jpeg";
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
@@ -28,9 +26,9 @@ const TITLE = "Nabeel";
 const pDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
 const brandName = "Nabeel Brands";
-const tabButton1 = "Nabe";
-const tabButton2 = "Nabeel Attar 2";
-const tabButton3 = "Nabeel Attar 3";
+const tabButton1 = "Chris Adams";
+const tabButton2 = "Nabeel Attar";
+
 function Nabeel() {
   return (
     <>
@@ -51,10 +49,8 @@ function Nabeel() {
       <SectionReusable
         Icon1={FormatSize}
         Icon2={DoneOutline}
-        Icon3={OpenWith}
         tabButton={tabButton1}
         tabButton2={tabButton2}
-        tabButton3={tabButton3}
         profile={profile}
         brandName={brandName}
         pDescription={pDescription}
