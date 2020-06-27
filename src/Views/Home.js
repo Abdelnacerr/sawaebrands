@@ -8,37 +8,20 @@ import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Typography from "@material-ui/core/Typography";
 import Footer from "../components/Footer/Footer";
-import SectionReusable from "./SectionReusable";
+import ImageCards from "./ImageCards";
 import { Helmet } from "react-helmet";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
-// @material-ui/icons
-import {FormatSize,DoneOutline,OpenWith,Polymer,FormatItalic,CardGiftcard} from '@material-ui/icons';
-
-import profile from "assets/img/faces/iCare.png";
-import profile2 from "assets/img/faces/supermarket.png";
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/swiss1.png";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+import Image1 from "assets/img/perfumes/49.jpg";
+import Image2 from "assets/img/perfumes/76.jpg";
+import Image3 from "assets/img/perfumes/72.jpg";
 
 const TITLE = "Sawae Brands";
 const pDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
 const brandName = "Christian Louboutin";
-const tabButton1 = "Swiss Arabian";
-const tabButton2 = "Nabeel";
-const tabButton3 = "iCare";
-const tabButton4 = "Tuskys";
-const tabButton5 = "Naivas";
-const tabButton6 = "Carrefour";
 
+const cardheader1 = "Shirley May Noora Shirley Johnn"
 const useStyles = makeStyles(styles);
 
 const Home = () => {
@@ -83,7 +66,7 @@ const Home = () => {
           </GridContainer>
         </div>
       </Parallax>
-      <SectionReusable
+      {/* <SectionReusable
         Icon1={Polymer}
         Icon2={CardGiftcard}
         Icon3={FormatItalic}
@@ -103,6 +86,7 @@ const Home = () => {
         work3={work3}
         work4={work4}
         work5={work5}
+        
       />
       <br />
       <br />
@@ -134,7 +118,11 @@ const Home = () => {
         work3={work3}
         work4={work4}
         work5={work5}
-      />
+      /> */}
+      <ImageCards  ImageName={Image1} cardheader={cardheader1}/>
+      <ImageCards  ImageName={Image2} cardheader={cardheader1}/>
+      <ImageCards  ImageName={Image3} cardheader={cardheader1}/>
+      
       <Footer />
     </>
   );
