@@ -18,14 +18,14 @@ const ImageCards = ({ cardheader, ImageName, subtitle }) => {
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 
   return (
-    <div className={classNames(classes.main, classes.mainRaised)}>
       <GridContainer justify="">
         <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+          <div >
           <CardHeader color="warning">{cardheader}</CardHeader>
           <img alt="..." src={ImageName} className={navImageClasses} />
+          </div>
         </GridItem>
       </GridContainer>
-    </div>
   );
 };
 export default ImageCards;

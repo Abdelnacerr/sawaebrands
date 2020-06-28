@@ -1,4 +1,6 @@
 import React from "react";
+import classNames from "classnames";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Header from "../components/Header/Header.js";
@@ -12,20 +14,32 @@ import ImageCards from "./ImageCards";
 import { Helmet } from "react-helmet";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
-import Image1 from "assets/img/perfumes/49.jpg";
-import Image2 from "assets/img/perfumes/76.jpg";
-import Image3 from "assets/img/perfumes/72.jpg";
+import profile from "assets/img/faces/sawae.jpeg";
+
+import Image1 from "assets/img/perfumes/118.jpg";
+import Image2 from "assets/img/perfumes/70.jpg";
+import Image3 from "assets/img/perfumes/Lumio.jpg";
+import Image4 from "assets/img/perfumes/Promise.jpg";
 
 const TITLE = "Sawae Brands";
 const pDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
-const brandName = "Christian Louboutin";
+const brandName = "Fragrances";
 
-const cardheader1 = "Shirley May Noora Shirley Johnn"
+const cardheader1 = "Viso 100ML";
+const cardheader2 = "Rasheeqa";
+const cardheader3 = "Lumio 75ML";
+const cardheader4 = "Promise 100ML";
+
 const useStyles = makeStyles(styles);
 
 const Home = () => {
   const classes = useStyles();
+  const imageClasses = classNames(
+    classes.imgRaised,
+    classes.imgRoundedCircle,
+    classes.imgFluid
+  );
   return (
     <>
       <Helmet>
@@ -59,71 +73,41 @@ const Home = () => {
                   variant="subtitle1"
                   gutterBottom
                 >
-                  Wholesale perfumes and sprays distributor for leading brands.
+                  WHOLESALE PERFUMES AND SPRAYS DISTRIBUTOR FOR LEADING BRANDS.
                 </Typography>
               </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      {/* <SectionReusable
-        Icon1={Polymer}
-        Icon2={CardGiftcard}
-        Icon3={FormatItalic}
-        tabButton={tabButton1}
-        tabButton2={tabButton2}
-        tabButton3={tabButton3}
-        brandName={brandName}
-        pDescription={pDescription}
-        profile={profile}
-        studio1={studio1}
-        studio2={studio2}
-        studio3={studio3}
-        studio4={studio4}
-        studio5={studio5}
-        work1={work1}
-        work2={work2}
-        work3={work3}
-        work4={work4}
-        work5={work5}
-        
-      />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
-      <SectionReusable
-        Icon1={FormatSize}
-        Icon2={DoneOutline}
-        Icon3={OpenWith}
-        tabButton={tabButton4}
-        tabButton2={tabButton5}
-        tabButton3={tabButton6}
-        brandName={brandName}
-        pDescription={pDescription}
-        profile={profile2}
-        studio1={studio1}
-        studio2={studio2}
-        studio3={studio3}
-        studio4={studio4}
-        studio5={studio5}
-        work1={work1}
-        work2={work2}
-        work3={work3}
-        work4={work4}
-        work5={work5}
-      /> */}
-      <ImageCards  ImageName={Image1} cardheader={cardheader1}/>
-      <ImageCards  ImageName={Image2} cardheader={cardheader1}/>
-      <ImageCards  ImageName={Image3} cardheader={cardheader1}/>
-      
-      <Footer />
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={6}>
+              <div className={classes.profile}>
+                <div>
+                  <img src={profile} alt="..." className={imageClasses} />
+                </div>
+                <div className={classes.name}>
+                  <h3 className={classes.title}>{brandName}</h3>
+                </div>
+              </div>
+            </GridItem>
+          </GridContainer>
+          <div className={classes.description}>
+            <p>{pDescription}</p>
+            <br></br>
+            <br></br>
+            <br></br>
+          </div>
+          <ImageCards ImageName={Image1} cardheader={cardheader1} />
+          <ImageCards ImageName={Image2} cardheader={cardheader2} />
+          <ImageCards ImageName={Image3} cardheader={cardheader3} />
+          <ImageCards ImageName={Image4} cardheader={cardheader4} />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 };

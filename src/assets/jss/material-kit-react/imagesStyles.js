@@ -14,11 +14,11 @@ const imagesStyles = {
       "0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
   },
   imgGallery: {
-    width: "100%",
-    height: "75%",
+    width: "85%",
+    height: "65%",
     boxShadow:
-    "0 2px 8px -8px red, 0 6px 13px -5px red",
-    marginBottom: "2.142rem",
+    "0 5px 15px -8px red, 0 8px 15px -5px red",
+    marginTop: "0",
   },
   imgCardTop: {
     width: "100%",
