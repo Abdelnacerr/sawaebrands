@@ -21,7 +21,7 @@ const ImageCards = ({ cardheader, ImageName, subtitle }) => {
       <GridContainer justify="">
         <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
           <div >
-          <CardHeader color="warning">{cardheader}</CardHeader>
+          <CardHeader style={{backgroundColor:"pink"}}><em style={{fontSize:"1.6rem"}}>{cardheader}</em></CardHeader>
           <img alt="..." src={ImageName} className={navImageClasses} />
           </div>
         </GridItem>
