@@ -8,7 +8,11 @@ import classNames from "classnames";
 import Card from "../components/Card/Card.js";
 import CardBody from "../components/Card/CardBody.js";
 import CardHeader from "../components/Card/CardHeader.js";
-import { Email, Call, Person } from "@material-ui/icons";
+import {
+  Email,
+  Call,
+  Person
+} from "@material-ui/icons";
 
 import { cardTitle } from "../assets/jss/material-kit-react.js";
 
@@ -24,18 +28,36 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-const ContactCards = ({ email, cardheader, title, call, person }) => {
+const ContactCards = ({
+  email,
+  cardheader,
+  title,
+  call,
+  person
+}) => {
   const classes = useStyles();
   return (
-
-      <div className={classNames(classes.main, classes.mainRaised)}>
-       <Card style={{ width: "85%", textAlign:"center" }}>
-        <CardHeader color="warning">{cardheader}</CardHeader>
-        <CardBody>
+    <div className={classNames(classes.main, classes.mainRaised)}>
+      <Card style={{ width: "85%", textAlign: "center" }}>
+        <CardHeader style={{ backgroundColor: "pink" }}>
+          {cardheader}
+        </CardHeader>
+        <CardBody
+          style={{ boxShadow: "0 5px 15px -8px red, 0 8px 15px -5px red" }}
+        >
           <h4 className={classes.cardTitle}> {title}</h4>
-          <h4> <Person /> {person} </h4>
-          <h4> <Email />  {email} </h4>
-          <h4> <Call />   {call}  </h4>
+          <h4>
+            {" "}
+            <Person /> {person}{" "}
+          </h4>
+          <h4>
+            {" "}
+            <Email /> {email}{" "}
+          </h4>
+          <h4>
+            {" "}
+            <Call /> {call}{" "}
+          </h4>
         </CardBody>
       </Card>
     </div>

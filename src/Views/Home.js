@@ -12,7 +12,6 @@ import Parallax from "components/Parallax/Parallax.js";
 import Typography from "@material-ui/core/Typography";
 import Footer from "../components/Footer/Footer";
 import ImageCards from "./ImageCards";
-import "./ButtonStyle.css";
 import { Helmet } from "react-helmet";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import Button from "../components/CustomButtons/Button.js";
@@ -141,6 +140,7 @@ const Home = () => {
           <br />
           <br />
           <br />
+          <br />
 
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
@@ -151,7 +151,7 @@ const Home = () => {
               </div>
             </GridItem>
           </GridContainer>
-          <div className={classes.description} style={{ marginTop: "-20px" }}>
+          <div className={classes.description} style={{ marginTop: "-30px" }}>
             <p>{pDescription}</p>
           </div>
 
