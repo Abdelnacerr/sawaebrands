@@ -50,6 +50,8 @@ const Home = () => {
     fontSize: "1.6rem",
     height: "70px",
     borderRadius: "8px",
+    boxShadow:
+    "0 5px 15px -8px red, 0 8px 15px -5px red",
   };
 
   const divButton = {
