@@ -28,6 +28,7 @@ const TITLE = "Sawae Brands";
 const pDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
 const brandName = "Fragrances";
+const supermarketBrands = "OUR CUSTOMERS";
 
 const cardheader1 = "Viso 100ML";
 const cardheader2 = "Rasheeqa";
@@ -44,8 +45,8 @@ const Home = () => {
     classes.imgFluid
   );
   const buttonStyle = {
-    color: "pink",
-    backgroundColor: "#E34A87",
+    color: "red",
+    backgroundColor: "#FFC0CB",
     fontSize: "1.6rem",
     height: "70px",
     borderRadius: "8px",
@@ -112,9 +113,9 @@ const Home = () => {
           </GridContainer>
           <div className={classes.description}>
             <p>{pDescription}</p>
-          <br />
-          <br />
-          <br />
+            <br />
+            <br />
+            <br />
           </div>
           <ImageCards ImageName={Image1} cardheader={cardheader1} />
           <ImageCards ImageName={Image2} cardheader={cardheader2} />
@@ -129,7 +130,7 @@ const Home = () => {
               color="transparent"
               className={classes.navLink}
             >
-              <em>BROWSE MORE</em>
+              <em>More Brands &#10145;</em>
             </Button>
           </div>
 
@@ -143,12 +144,12 @@ const Home = () => {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>{brandName}</h3>
+                  <h3 className={classes.title}>{supermarketBrands}</h3>
                 </div>
               </div>
             </GridItem>
           </GridContainer>
-          <div className={classes.description} style={{marginTop:"-20px"}}>
+          <div className={classes.description} style={{ marginTop: "-20px" }}>
             <p>{pDescription}</p>
           </div>
 
