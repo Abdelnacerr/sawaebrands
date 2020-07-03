@@ -28,6 +28,9 @@ function About() {
       <Typography variant="h1" component="h2" style={{ color: "black" }}>
         Coming Soon.
       </Typography>
+      
+      <hr style={{ borderColor: "pink" }}></hr>
+
     </>
   );
 }

@@ -52,6 +52,9 @@ function Contact() {
         person = "Sharif Mohamed"
         /> 
       </div>
+      
+      <hr style={{ borderColor: "pink" }}></hr>
+
       <Footer />
     </>
   );

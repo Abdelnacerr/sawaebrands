@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -11,8 +12,10 @@ import Parallax from "components/Parallax/Parallax.js";
 import Typography from "@material-ui/core/Typography";
 import Footer from "../components/Footer/Footer";
 import ImageCards from "./ImageCards";
+import "./ButtonStyle.css";
 import { Helmet } from "react-helmet";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import Button from "../components/CustomButtons/Button.js";
 
 import profile from "assets/img/faces/sawae.jpeg";
 
@@ -40,6 +43,18 @@ const Home = () => {
     classes.imgRoundedCircle,
     classes.imgFluid
   );
+  const buttonStyle = {
+    color: "pink",
+    backgroundColor: "#E34A87",
+    fontSize: "1.6rem",
+    height: "70px",
+    borderRadius: "8px",
+  };
+
+  const divButton = {
+    display: "flex",
+    justifyContent: "center",
+  };
   return (
     <>
       <Helmet>
@@ -97,14 +112,53 @@ const Home = () => {
           </GridContainer>
           <div className={classes.description}>
             <p>{pDescription}</p>
-            <br></br>
-            <br></br>
-            <br></br>
+          <br />
+          <br />
+          <br />
           </div>
           <ImageCards ImageName={Image1} cardheader={cardheader1} />
           <ImageCards ImageName={Image2} cardheader={cardheader2} />
           <ImageCards ImageName={Image3} cardheader={cardheader3} />
           <ImageCards ImageName={Image4} cardheader={cardheader4} />
+
+          <div style={divButton}>
+            <Button
+              style={buttonStyle}
+              component={Link}
+              to="/SwissArabian"
+              color="transparent"
+              className={classes.navLink}
+            >
+              <em>BROWSE MORE</em>
+            </Button>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={6}>
+              <div className={classes.profile}>
+                <div className={classes.name}>
+                  <h3 className={classes.title}>{brandName}</h3>
+                </div>
+              </div>
+            </GridItem>
+          </GridContainer>
+          <div className={classes.description} style={{marginTop:"-20px"}}>
+            <p>{pDescription}</p>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <hr style={{ borderColor: "pink" }}></hr>
           <Footer />
         </div>
       </div>

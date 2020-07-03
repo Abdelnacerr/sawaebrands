@@ -105,6 +105,9 @@ const ICare = () => {
           <ImageCards ImageName={Image2} cardheader={cardheader2} />
           <ImageCards ImageName={Image3} cardheader={cardheader3} />
           <ImageCards ImageName={Image4} cardheader={cardheader4} />
+
+          <hr style={{ borderColor: "pink" }}></hr>
+
           <Footer />
         </div>
       </div>

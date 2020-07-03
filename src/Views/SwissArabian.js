@@ -87,36 +87,16 @@ import Image67 from "assets/img/perfumes/ChichiPourFemme.jpg";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const TITLE = "Swiss Arabian";
 const pDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
 const brandName = "Swiss Arabian";
 
-const cardheader1 = "AMltaModa miss Glam 100ML ";
-const cardheader2 = "Shirley May Noora ";
-const cardheader3 = "Shirley May Lifetime 100ML ";
-const cardheader4 = "Shirley May Layali ";
-const cardheader5 = "sapil Disclueser ";
+const cardheader1 = "AltaModa Miss Glam ";
+const cardheader2 = "Swiss Arabian Nooraa ";
+const cardheader3 = "Chris Adams Lifetime 100ML ";
+const cardheader4 = "Swiss Arabian Layali ";
+const cardheader5 = "Sapil Disclosure ";
 const cardheader6 = "Sapil Nice Feelings ";
 const cardheader7 = "Sapil Consensual 200Ml ";
 const cardheader8 = "Swiss Arabian Jawad ";
@@ -127,20 +107,20 @@ const cardheader12 = "Sapil Universal";
 const cardheader13 = "Shirley May 121 Men 100Ml";
 const cardheader14 = "Sapil Chichi 200Ml";
 const cardheader15 = "Sapil Lumio";
-const cardheader16 = "Swiss Arabian 121 Men";
-const cardheader17 = "Swiss Arabian 1998";
-const cardheader18 = "Sapil, Bohemian";
-const cardheader19 = "Sapil, Virtual";
-const cardheader20 = "AltaModa, Adore 100Ml";
-const cardheader21 = "Sapil, Nice Feelings 200Ml";
-const cardheader22 = "Swiss Arabian, Ahlam";
-const cardheader23 = "AltaModa, Parfum D'Exces ";
-const cardheader24 = "Shirley May, Albakhoos 100Ml ";
-const cardheader25 = "Shirley May, Albakhoos 50Ml ";
-const cardheader26 = "AltaModa, Nuit Extreme Pour Home ";
+const cardheader16 = "Shirley May 121 Men";
+const cardheader17 = "Shirley May 1998";
+const cardheader18 = "Sapil Bohemian";
+const cardheader19 = "Sapil Virtual";
+const cardheader20 = "AltaModa Adore 100Ml";
+const cardheader21 = "Sapil Nice Feelings 200Ml";
+const cardheader22 = "Swiss Arabian Ahlam";
+const cardheader23 = "AltaModa Parfum D'Exces ";
+const cardheader24 = "Shirley May Albakhoos 100Ml ";
+const cardheader25 = "Shirley May Albakhoos 50Ml ";
+const cardheader26 = "AltaModa Nuit Extreme Pour Home ";
 const cardheader27 = "Shirley May Albakhoos 200Ml ";
-const cardheader28 = "AltaModa, Victory 200Ml ";
-const cardheader29 = "AltaModa,Sweat Heart 200Ml  ";
+const cardheader28 = "AltaModa Victory 200Ml ";
+const cardheader29 = "AltaModa Sweat Heart 200Ml  ";
 const cardheader30 = "Sapil Amber Affair  ";
 const cardheader31 = "Sapil   ";
 const cardheader32 = "AltaModa Elite 200Ml";
@@ -156,8 +136,8 @@ const cardheader41 = "Swiss Arabian Al Ayam";
 const cardheader42 = "Swiss Arabian Hoor";
 const cardheader43 = "Chris Adams Active Man ";
 const cardheader44 = "Chris Adams Active Man ";
-const cardheader45 = "Chris Adams Active Man Blance  ";
-const cardheader46 = "Chris Adams Active Man Blance  ";
+const cardheader45 = "Chris Adams Active Man Blanc  ";
+const cardheader46 = "Chris Adams Active Man Blanc  ";
 const cardheader47 = "Chris Adams Active Woman 200Ml  ";
 const cardheader48 = "Chris Adams Active Woman Blanche  ";
 const cardheader49 = "Chris Adams Active Woman Blanche  ";
@@ -441,7 +421,7 @@ const SwissArabian = () => {
 
 
 
-
+          <hr style={{ borderColor: "pink" }}></hr>
 
           <Footer />
         </div>

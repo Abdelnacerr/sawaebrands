@@ -398,6 +398,7 @@ const Nabeel = () => {
 
 
 
+          <hr style={{ borderColor: "pink" }}></hr>
 
 
 
