@@ -46,7 +46,7 @@ const Home = () => {
     classes.imgFluid
   );
   const buttonStyle = {
-    color: "red",
+    color: "",
     backgroundColor: "#FFC0CB",
     fontSize: "1.6rem",
     height: "70px",
