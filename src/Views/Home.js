@@ -24,9 +24,11 @@ import Image3 from "assets/img/perfumes/Lumio.jpg";
 import Image4 from "assets/img/perfumes/Promise.jpg";
 
 const TITLE = "Sawae Brands";
-const pDescription =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
-const brandName = "Fragrances";
+const pDescription = 
+  " We Source our fragrances from some of the best manufacturers in the world. Some of the fragrances are exotic, some are heavenly. Some will creep up your nose and make you fly, others are harmonious. Scroll below and have a glance or go to our brands section and dive deep into all divine scents we have, your olfactory receptors will thank you! ";
+const pDescription2 = 
+  "Just as we source from the best manufactures, we also stock our fragrances on the best shelves in the best supermarkets in Nairobi, Kenya. You will find us at International supermaket chain Carrefour, Tuskys and Naivas supermakets. We also supply to both retail and wholesale perfume shops across Nairobi. You could be next, so give us a ring if you like the brands we stock. Check the contact-us page for details. "
+const brandName = "Our Fragrances";
 const supermarketBrands = "OUR CUSTOMERS";
 
 const cardheader1 = "Viso 100ML";
@@ -49,8 +51,7 @@ const Home = () => {
     fontSize: "1.6rem",
     height: "70px",
     borderRadius: "8px",
-    boxShadow:
-    "0 5px 15px -8px red, 0 8px 15px -5px red",
+    boxShadow: "0 5px 15px -8px red, 0 8px 15px -5px red",
   };
 
   const divButton = {
@@ -152,7 +153,7 @@ const Home = () => {
             </GridItem>
           </GridContainer>
           <div className={classes.description} style={{ marginTop: "-30px" }}>
-            <p>{pDescription}</p>
+            <p>{pDescription2}</p>
           </div>
 
           <br />

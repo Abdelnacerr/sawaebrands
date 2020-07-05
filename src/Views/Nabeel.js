@@ -79,34 +79,9 @@ import Image60 from "assets/img/perfumes/94.jpg";
 import Image61 from "assets/img/perfumes/95.jpg";
 import Image62 from "assets/img/perfumes/96.jpg";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const TITLE = "Nabeel";
 const pDescription =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
+  "Asghar Adam Ali (Al Attar), the pioneering force and the founder, founded Nabeel in 1969. He nurtured Nabeel like his own child, leading the path through every dark tunnel towards success. He created a flourishing business through sheer hard work, perseverance, and die-hard adherence to stringent quality standards, and all this full-throttle effort led to a treasure of quality perfumery that is relished by men and women alike. Standing by its etymological meaning “Noble” — in Arabic — today, the brand “Nabeel” has evolved into a thriving corporation, thanks to the visionary leadership of its founder and the dedicated efforts of the “Team Nabeel!”"
 const brandName = "Nabeel";
 
 const cardheader1 = "Chris Adams Frequency ";
@@ -171,40 +146,6 @@ const cardheader59= "Nabeel Bakhoor Maamul ";
 const cardheader60= "Nabeel Maamul Adar ";
 const cardheader61= "Nabeel Surf 100Ml ";
 const cardheader62= "Nabeel Majestic ";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const useStyles = makeStyles(styles);
 
@@ -339,65 +280,6 @@ const Nabeel = () => {
           <ImageCards ImageName={Image61} cardheader={cardheader61} />
           <ImageCards ImageName={Image62} cardheader={cardheader62} />
           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-
-
-
-
-
-
-
-
-
           <hr style={{ borderColor: "pink" }}></hr>
 
 

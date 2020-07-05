@@ -84,12 +84,9 @@ import Image65 from "assets/img/perfumes/Challenge.jpg";
 import Image66 from "assets/img/perfumes/Chichi4.jpg";
 import Image67 from "assets/img/perfumes/ChichiPourFemme.jpg";
 
-
-
-
 const TITLE = "Swiss Arabian";
 const pDescription =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}';
+  "The history of Swiss Arabian is an enchanting tale that spans over 40 years. This pioneer in Arabian perfumes was founded in the year 1974 by Mr. Hussein Adam Ali, a visionary young man from Yemen with a wealth of knowledge and a deep passion for perfumery. At Swiss Arabian, our expertise and passion, our knowledge of legendary Arabian perfumery, oriental craftsmanship and contemporary elegance, all come together to create fragrances that capture your imagination and celebrate your true essence."
 const brandName = "Swiss Arabian";
 
 const cardheader1 = "AltaModa Miss Glam ";
@@ -159,70 +156,6 @@ const cardheader64 = "Swiss Arabian Bonita";
 const cardheader65 = "Sapil Chalenge 100Ml";
 const cardheader66 = "Sapil Chichi 200Ml";
 const cardheader67 = "Sapil Chichi 100Ml";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const useStyles = makeStyles(styles);
 
