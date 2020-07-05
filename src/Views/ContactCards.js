@@ -8,11 +8,7 @@ import classNames from "classnames";
 import Card from "../components/Card/Card.js";
 import CardBody from "../components/Card/CardBody.js";
 import CardHeader from "../components/Card/CardHeader.js";
-import {
-  Email,
-  Call,
-  Person
-} from "@material-ui/icons";
+import { Email, Call, Person } from "@material-ui/icons";
 
 import { cardTitle } from "../assets/jss/material-kit-react.js";
 
@@ -28,13 +24,7 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-const ContactCards = ({
-  email,
-  cardheader,
-  title,
-  call,
-  person
-}) => {
+const ContactCards = ({ email, cardheader, title, call, person }) => {
   const classes = useStyles();
   return (
     <div className={classNames(classes.main, classes.mainRaised)}>

@@ -16,7 +16,7 @@ import { Helmet } from "react-helmet";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import Button from "../components/CustomButtons/Button.js";
 
-import profile from "assets/img/faces/sawae.jpeg";
+import profile from "assets/img/faces/download.png";
 
 import Image1 from "assets/img/perfumes/118.jpg";
 import Image2 from "assets/img/perfumes/70.jpg";

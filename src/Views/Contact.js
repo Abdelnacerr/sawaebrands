@@ -27,7 +27,7 @@ function Contact() {
         <title>{TITLE}</title>
       </Helmet>
       <Header
-        brand="SAWAE BRANDS"
+        brand="Contact Us"
         rightLinks={<Hlinks />}
         color="transparent"
         fixed
@@ -46,7 +46,7 @@ function Contact() {
                   component="h2"
                   style={{ color: "white" }}
                 >
-                  Sawae Brands.
+                  Contact info.
                 </Typography>{" "}
                 <Typography
                   style={{ color: "white" }}
